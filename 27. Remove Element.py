@@ -1,4 +1,4 @@
-class Solution:
+ class Solution:
     def removeElement(self, nums, val):  # Add 'self' for instance method
         i = 0  # Pointer to track placement of non-val elements
 
