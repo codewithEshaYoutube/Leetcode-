@@ -11,4 +11,3 @@ class Solution:
 
         
         return length
-# return len(s.strip().split()[-1])
