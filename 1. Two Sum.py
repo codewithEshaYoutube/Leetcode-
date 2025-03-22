@@ -1,14 +1,15 @@
 class Solution:
     def twoSum(self, nums, target):
-        Esha = {}
-        for i, num in enumerate(nums):
-            complement = target - num
-            if complement in Esha:
-                return [Esha[complement],i]
+        prev_map={} #hashmap value:index
+        for i , n in enumerate(nums):
+            diff=target-n
+            
+            if diff in prev_map:
+                return[prev_map[diff],i] 
+            prev_map[n]=i
+        return
 
-            Esha[num] = i 
-        return []
-       
+
  
 
 
