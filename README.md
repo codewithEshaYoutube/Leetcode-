@@ -1,4 +1,4 @@
-# Project Name
+# Leetcode Practice
 
 ## Description
 
