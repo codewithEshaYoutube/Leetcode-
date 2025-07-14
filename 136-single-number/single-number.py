@@ -23,6 +23,7 @@ class Solution:
             exclusive^=n
         return exclusive
         """
+        exclusive or
         T:linear time o(n)
         S: constant O(1)
         """
