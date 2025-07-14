@@ -3,11 +3,12 @@ class Solution:
         """
         S:O(1)
         T:O(n)
-        1,dictionary
+        1,set
         2, make a loop 
         3.check the duplicate
         4.we can emoinate the duplicates
         5. return array
+        """
         """
         nums_set=set()
         for n in nums:
@@ -16,6 +17,15 @@ class Solution:
             else:
                 nums_set.add(n)
         return nums_set.pop()
+        """
+        exclusive=0
+        for n in nums:
+            exclusive^=n
+        return exclusive
+        """
+        T:linear time o(n)
+        S: constant O(1)
+        """
 
         
                 
