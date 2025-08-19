@@ -1,22 +1,21 @@
 class Solution:
     def canConstruct(self, ransomNote: str, magazine: str) -> bool:
-        char_map={}
-        
-        for char in magazine :
-            if char in char_map:
-                char_map[char]+=1
+        counter={}
+        for c in magazine:
+            if c in counter:
+                counter[c]+=1 # Repeating value is added
             else:
-                char_map[char]=1
-
-        for char in ransomNote:
-            if char not in char_map or char_map[char]==0:
+                counter[c]=1
+        for c in ransomNote:
+            if c not in counter:
                 return False
-            char_map[char] -= 1
-        return True    
+            elif counter[c]==1:
+                del counter[c]
+            else:
+                counter[c]-=1
+        return True
+
+
+                
         
 
-        
-       
-
-
-        
