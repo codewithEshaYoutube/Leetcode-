@@ -10,3 +10,5 @@ class Solution:
             anagram_dict[key].append(s)
         return list(anagram_dict.values())
         
+        T=O(n*m)
+        S=O(n*m)
