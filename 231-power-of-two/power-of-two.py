@@ -9,4 +9,6 @@ class Solution:
                 return False
             return (power(x//2))
         return power(n)
+        #T:O(log n)
+        #S;O(log n)
             
