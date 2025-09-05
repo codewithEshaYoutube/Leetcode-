@@ -32,6 +32,8 @@ class Solution:
                 board[r][c]="."
         backtrack(0)
         return res
+        #T: O(n*n!) for n=4 it will be O(96)     (96 steps included)
+        #s:O(n^2)   for n=4 it will be O(16) 
 
 
         
