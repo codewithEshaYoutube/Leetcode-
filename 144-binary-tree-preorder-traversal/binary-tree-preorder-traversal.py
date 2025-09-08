@@ -16,3 +16,5 @@ class Solution:
             else:
                 cur=stack.pop()
         return res
+        #T O(n)
+        #S O(n)
