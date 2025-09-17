@@ -11,7 +11,8 @@ class Solution:
                 r-=1
         return res
             
-        return res
+        # T: O(n)
+        # S: O(1)
 
 
         
