@@ -6,9 +6,23 @@ class ListNode:
 
 class Solution:
     def middleNode(self, head: ListNode) -> ListNode:
-        slow = fast = head
-        # Move fast by 2 steps and slow by 1 step
+
+        """
+        intializing slow,fast pointers
+        loop  over fast , fast next 
+        return slow (mid)
+        
+        """
+        slow=head
+        fast=head
+
+
         while fast and fast.next:
-            slow = slow.next
-            fast = fast.next.next
+            slow=slow.next
+            fast=fast.next.next
         return slow
+    
+
+        
+# T;O(n)
+# S:O(1)
