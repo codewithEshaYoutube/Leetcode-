@@ -13,7 +13,8 @@ class Solution:
         return dummy.next
 
         """
-        dummy =ListNode(0,head)
+        dummy =ListNode(0) 
+        
         dummy.next=head  #
         prev,curr=dummy,head
         while curr and curr.next :
