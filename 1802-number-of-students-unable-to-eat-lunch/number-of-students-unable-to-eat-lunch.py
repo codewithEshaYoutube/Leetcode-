@@ -1,19 +1,17 @@
-from collections import deque
 
 class Solution:
     def countStudents(self, students, sandwiches):
-        students = deque(students)
-        sandwiches = deque(sandwiches)
+        count_0=students.count(0)
+        count_1=students.count(1)
 
-        count = 0  # tracks rotations without progress
-
-        while students and count < len(students):
-            if students[0] == sandwiches[0]:
-                students.popleft()
-                sandwiches.popleft()
-                count = 0
+        for s in sandwiches:
+            if s==0:
+                if count_0==0:
+                    return count_1
+                count_0-=1
             else:
-                students.append(students.popleft())
-                count += 1
+                if count_1==0:
+                    return count_0
+                count_1-=1
+        return 0
 
-        return len(students)
