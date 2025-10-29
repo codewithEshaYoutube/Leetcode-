@@ -14,4 +14,5 @@ class Solution:
 
 
        
-        
+        # T: O(n*m)
+        # S: O(n)
