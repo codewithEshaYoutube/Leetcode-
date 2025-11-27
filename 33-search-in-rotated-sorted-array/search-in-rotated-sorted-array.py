@@ -15,7 +15,7 @@ class Solution:
             mid=(l+r)//2
             if nums[mid]==target:
                 return mid
-            #  consideing left sorted part 
+            #  considering left sorted part 
             if nums[l]<=nums[mid]:
                 if nums[l]  <= target< nums[mid]:
                     r=mid-1
