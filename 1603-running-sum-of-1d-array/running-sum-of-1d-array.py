@@ -7,4 +7,8 @@ class Solution:
             
         return nums
 
-        
+    """
+       T O(n)
+       S O(1)
+    """
+    
