@@ -1,6 +1,10 @@
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
-        res=0
-        for n in  nums:
-            res=n ^ res
-        return res
+
+
+        result=0
+        for num in nums:
+            # exclusive or
+            result = num ^ result
+        return result
+        
