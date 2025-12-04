@@ -24,6 +24,9 @@ class Solution:
                 left+=1
         return min_length if min_length < float('inf') else 0
 
+        #   if  no. of min elements in subarray   +ive return else return 0
+        
+
 
 
 
