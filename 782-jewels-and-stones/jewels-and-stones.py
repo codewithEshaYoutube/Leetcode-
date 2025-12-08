@@ -6,6 +6,11 @@ class Solution:
             if s in jewel_set:
                 count+=1
         return count
+
+        #T: O(Jewels+stones)   , O(n+m) 
+        # O(jewels), O(n)  
+
+
         
 
         
