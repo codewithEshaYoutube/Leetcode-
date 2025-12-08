@@ -1,6 +1,6 @@
 class Solution:
     def leastBricks(self, wall: List[List[int]]) -> int:
-        counter_gap={}
+        counter_gap={0:0}
         for r in wall:
             total=0
             for b in r[:-1]:
