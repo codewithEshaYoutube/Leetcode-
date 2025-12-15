@@ -1,11 +1,16 @@
-from typing import List
-
 class Solution:
     def sortArray(self, nums: List[int]) -> List[int]:
+        """
+        considering base case 
+        pointers approach
+        function merge sort
+        recursively apply on each level
+
+        """
         if len(nums)<=1:
+
             return nums
         mid=len(nums)//2
-
         left=self.sortArray(nums[:mid])
         right=self.sortArray(nums[mid:])
         return self.merge(left,right)
@@ -22,4 +27,7 @@ class Solution:
         res.extend(left[i:])
         res.extend(right[j:])
         return res
+        
+
+        
 
