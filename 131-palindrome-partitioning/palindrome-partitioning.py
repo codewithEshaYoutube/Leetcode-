@@ -5,13 +5,7 @@ class Solution:
         """
         res=[]
         part=[]
-        def isPali(l,r):
-            while l<r:
-                if s[l]!=s[r]:
-                    return  False
-                l+=1
-                r-=1
-            return True
+        
 
         def dfs(i):
             if i>=len(s):
