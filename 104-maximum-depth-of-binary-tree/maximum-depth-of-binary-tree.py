@@ -7,17 +7,20 @@
 class Solution:
     def maxDepth(self, root: Optional[TreeNode]) -> int:
         def dfs(curr):
-            # base case
-            if not curr:
-                return 0 # empty  node
+            #base case
+            if not curr :
+                return 0
+            # recursive case
             left=dfs(curr.left)
             right=dfs(curr.right)
 
             return 1+max(left,right)
         return dfs(root)
+        #T: O(N)
+        #S:O(log n)  O(n)
 
-        #S : O(log n) , O(n)
-        #T : O(n)
+
+       
 
             
 
