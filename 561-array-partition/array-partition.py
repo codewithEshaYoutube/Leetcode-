@@ -14,4 +14,7 @@ class Solution:
             j+=2
         return res
 
+        # t ; nlog n
+        # s : O(1)
+
 
