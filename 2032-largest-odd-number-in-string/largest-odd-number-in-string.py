@@ -1,13 +1,8 @@
 class Solution:
     def largestOddNumber(self, num: str) -> str:
-        res=[]
-        for i in range(len(num)):
+        for i in  range(len(num)-1,-1,-1):
             if int(num[i])%2!=0:
-                res.append(i)
-        if not res:
-            return ""
-
-            
-        return num[:max(res)+1]
+                return num[:i+1]
+        return ""
 
         
