@@ -18,14 +18,13 @@ class Solution:
         
         """
         hashmap={}
-        n=len(nums)
-        for i,num in enumerate (nums):
+        for i,num in enumerate (nums):#  saving its index and value 
             
             complement=target-nums[i]
             
             if complement in hashmap:
                 return [hashmap[complement],i]
-            hashmap[num]=i
+            hashmap[num]=i 
 
 
         
