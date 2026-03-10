@@ -1,26 +1,30 @@
 class Solution:
     def search(self, nums: List[int], target: int) -> int:
-
-        """
-        low   0th
-        high   last
-        loop over array until low will overlap high
-        mid==tar
-        mid<tar
-        mid>tar
-        """
+        
         low=0
         high=len(nums)-1
         while low<=high:
-            mid=(low+high)//2
+            mid=(low+high)//2  #index
             guess=nums[mid]
-            if guess==target:
-                return mid
+            #descion
 
-            elif guess<target:
-                low=mid+1
+            if guess==target:
+                return mid 
+            elif guess >target:
+                high=mid-1  #  update high
             else:
-                high=mid-1
+                low=mid+1 #update low
         return -1
+        # T: O(logn)
+        # S: O(1)   
+
+
+
+
+
+        
+        
+        
+
 
         
