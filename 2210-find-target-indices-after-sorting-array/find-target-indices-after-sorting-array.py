@@ -8,4 +8,3 @@ class Solution:
             if num==target:
                 ans.append(i)
         return ans
-
